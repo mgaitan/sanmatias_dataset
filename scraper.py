@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import date, datetime
 
 import requests
@@ -32,7 +33,7 @@ def scrap_item(url):
     response.raise_for_status()
     pq = PyQuery(response.content)
     
-    item["id"], item["name"] = pq("h1.header_title").text().split("-")
+    item["id"], _, item["name"] = re.split(r"(\-| ?– ?)", pq("h1.header_title").text())
 
     prices = json.loads(pq("div.ovabrw__product_calendar").attr("price_calendar"))
 
