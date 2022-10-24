@@ -37,7 +37,7 @@ def scrap_item(url):
     pq = PyQuery(response.content)
 
     item["id"], _, item["name"] = re.split(r"(\-| ?– ?)", pq("h1.header_title").text())
-
+    
     prices = json.loads(pq("div.ovabrw__product_calendar").attr("price_calendar"))
 
     item["price"] = PyQuery(prices[1]["ovabrw_daily_monday"]).text()
@@ -45,12 +45,16 @@ def scrap_item(url):
     special_prices = json.loads(
         pq("div.ovabrw__product_calendar").attr("data-special-time")
     )
-    item["special_prices"] = {
-        PyQuery(k).text(): tuple(
-            date.fromtimestamp(int(timestamp)).strftime("%Y-%m-%d") for timestamp in v
-        )
-        for (k, v) in special_prices.items()
-    }
+    if special_prices:
+        item["special_prices"] = {
+            PyQuery(k).text(): tuple(
+                date.fromtimestamp(int(timestamp)).strftime("%Y-%m-%d") for timestamp in v
+            )
+            for (k, v) in special_prices.items()
+        }
+    else:
+        item["special_prices"] = {}
+
     try:
         occupations = json.loads(pq("div.ovabrw__product_calendar").attr("order_time"))
         occupations = parse_occupations(occupations)
