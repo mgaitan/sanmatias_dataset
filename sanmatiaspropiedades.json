@@ -784,7 +784,12 @@
         "2022-11-30"
       ]
     },
-    "occupation": []
+    "occupation": [
+      "2022-12-08",
+      "2022-12-09",
+      "2022-12-10",
+      "2022-12-11"
+    ]
   },
   {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1392-arenas-del-golfo-35/",
@@ -923,6 +928,52 @@
     ]
   },
   {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/casablanca-217/",
+    "id": "",
+    "name": "CASABLANCA 217",
+    "price": "$30.000",
+    "special_prices": {
+      "$20": [
+        "2022-11-01",
+        "2022-12-11"
+      ]
+    },
+    "occupation": [
+      "2022-12-12",
+      "2022-12-13",
+      "2022-12-14",
+      "2022-12-15",
+      "2022-12-16",
+      "2022-12-17",
+      "2022-12-18",
+      "2023-01-09",
+      "2023-01-10",
+      "2023-01-11",
+      "2023-01-12",
+      "2023-01-13",
+      "2023-01-14",
+      "2023-01-15",
+      "2023-01-16",
+      "2023-01-17",
+      "2023-01-18",
+      "2023-01-19",
+      "2023-01-20",
+      "2023-01-21",
+      "2023-01-22",
+      "2023-01-23",
+      "2023-01-24",
+      "2023-01-25",
+      "2023-01-26",
+      "2023-01-30",
+      "2023-01-31",
+      "2023-02-01",
+      "2023-02-02",
+      "2023-02-03",
+      "2023-02-04",
+      "2023-02-05"
+    ]
+  },
+  {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/depto-el-colibri/",
     "id": "",
     "name": "Dpto. El Colibr\u00ed",
@@ -943,6 +994,32 @@
     "name": "Duplex Georgy 5\u00ba Bajada",
     "price": "$35.000",
     "special_prices": {},
+    "occupation": []
+  },
+  {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/la-calma-dpto-tipo-duplex-2/",
+    "id": "",
+    "name": "\u00abLa Calma\u00bb Dpto tipo Duplex",
+    "price": "$30.000",
+    "special_prices": {
+      "$20.000": [
+        "2022-10-01",
+        "2022-11-30"
+      ]
+    },
+    "occupation": []
+  },
+  {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/la-calma4-dpto-tipo-duplex/",
+    "id": "",
+    "name": "\u00abLa Calma\u00bb4 Dpto tipo Duplex",
+    "price": "$30.000",
+    "special_prices": {
+      "$20.000": [
+        "2022-10-01",
+        "2022-11-30"
+      ]
+    },
     "occupation": []
   },
   {
@@ -983,6 +1060,58 @@
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/villa-cristobal-9/",
     "id": "",
     "name": "Villa Crist\u00f3bal 9",
+    "price": "$25.000",
+    "special_prices": {
+      "$18.000": [
+        "2022-10-01",
+        "2022-11-30"
+      ]
+    },
+    "occupation": []
+  },
+  {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/la-calma-1-dpto-tipo-duplex/",
+    "id": "",
+    "name": "La Calma 1 Dpto tipo Duplex",
+    "price": "$30.000",
+    "special_prices": {
+      "$20.000": [
+        "2022-10-01",
+        "2022-11-30"
+      ]
+    },
+    "occupation": []
+  },
+  {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/la-calma-dpto-tipo-duplex/",
+    "id": "",
+    "name": "\u00abLa Calma\u00bb Dpto tipo Duplex",
+    "price": "$27.000",
+    "special_prices": {
+      "$20.000": [
+        "2022-10-01",
+        "2022-11-30"
+      ]
+    },
+    "occupation": []
+  },
+  {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/villa-cristobal-dpto-tipo-duplex/",
+    "id": "",
+    "name": "Villa Crist\u00f3bal Dpto tipo duplex",
+    "price": "$35.000",
+    "special_prices": {
+      "$18.000": [
+        "2022-10-01",
+        "2022-11-30"
+      ]
+    },
+    "occupation": []
+  },
+  {
+    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/villa-cristobal/",
+    "id": "",
+    "name": "Villa Crist\u00f3bal",
     "price": "$25.000",
     "special_prices": {
       "$18.000": [
