@@ -690,7 +690,14 @@
       "2023-02-03",
       "2023-02-04",
       "2023-02-05",
-      "2023-02-06"
+      "2023-02-06",
+      "2023-02-11",
+      "2023-02-12",
+      "2023-02-13",
+      "2023-02-14",
+      "2023-02-15",
+      "2023-02-16",
+      "2023-02-17"
     ]
   },
   {
@@ -770,7 +777,13 @@
       "2022-12-08",
       "2022-12-09",
       "2022-12-10",
-      "2022-12-11"
+      "2022-12-11",
+      "2023-02-03",
+      "2023-02-04",
+      "2023-02-05",
+      "2023-02-06",
+      "2023-02-07",
+      "2023-02-08"
     ]
   },
   {
@@ -965,62 +978,6 @@
     "occupation": []
   },
   {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/la-calma-dpto-tipo-duplex-2/",
-    "id": "",
-    "name": "\u00abLa Calma\u00bb Dpto tipo Duplex",
-    "price": "$30.000",
-    "special_prices": {
-      "$20.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": []
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/la-calma4-dpto-tipo-duplex/",
-    "id": "",
-    "name": "\u00abLa Calma\u00bb4 Dpto tipo Duplex",
-    "price": "$30.000",
-    "special_prices": {
-      "$20.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": [
-      "2023-09-01",
-      "2023-09-02",
-      "2023-09-03",
-      "2023-09-04",
-      "2023-09-05",
-      "2023-09-06",
-      "2023-09-07",
-      "2023-09-08",
-      "2023-09-09",
-      "2023-09-10",
-      "2023-09-11",
-      "2023-09-12",
-      "2023-09-13",
-      "2023-09-14",
-      "2023-09-15",
-      "2023-09-16",
-      "2023-09-17",
-      "2023-09-18",
-      "2023-09-19",
-      "2023-09-20",
-      "2023-09-21",
-      "2023-09-22",
-      "2023-09-23",
-      "2023-09-24",
-      "2023-09-25",
-      "2023-09-26",
-      "2023-09-27",
-      "2023-09-28",
-      "2023-09-29"
-    ]
-  },
-  {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/villa-cristobal-14/",
     "id": "",
     "name": "Villa Crist\u00f3bal 14",
@@ -1058,78 +1015,6 @@
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/villa-cristobal-9/",
     "id": "",
     "name": "Villa Crist\u00f3bal 9",
-    "price": "$25.000",
-    "special_prices": {
-      "$18.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": []
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/dpto-edificio-arenas-del-golfo-20/",
-    "id": "",
-    "name": "Dpto Edificio Arenas del Golfo 20",
-    "price": "$30.000",
-    "special_prices": {
-      "$20.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": [
-      "2023-02-03",
-      "2023-02-04",
-      "2023-02-05",
-      "2023-02-06",
-      "2023-02-07",
-      "2023-02-08"
-    ]
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/la-calma-1-dpto-tipo-duplex/",
-    "id": "",
-    "name": "La Calma 1 Dpto tipo Duplex",
-    "price": "$30.000",
-    "special_prices": {
-      "$20.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": []
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/la-calma-dpto-tipo-duplex/",
-    "id": "",
-    "name": "\u00abLa Calma\u00bb Dpto tipo Duplex",
-    "price": "$27.000",
-    "special_prices": {
-      "$20.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": []
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/villa-cristobal-dpto-tipo-duplex/",
-    "id": "",
-    "name": "Villa Crist\u00f3bal Dpto tipo duplex",
-    "price": "$35.000",
-    "special_prices": {
-      "$18.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": []
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/venta/villa-cristobal/",
-    "id": "",
-    "name": "Villa Crist\u00f3bal",
     "price": "$25.000",
     "special_prices": {
       "$18.000": [
