@@ -249,6 +249,10 @@
       "2022-12-30",
       "2022-12-31",
       "2023-01-01",
+      "2023-01-04",
+      "2023-01-05",
+      "2023-01-06",
+      "2023-01-07",
       "2023-01-09",
       "2023-01-10",
       "2023-01-11",
@@ -1006,7 +1010,7 @@
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/villa-cristobal-14/",
     "id": "",
     "name": "Villa Crist\u00f3bal 14",
-    "price": "$28.000",
+    "price": "$23.000",
     "special_prices": {
       "$20.000": [
         "2022-10-01",
@@ -1027,7 +1031,7 @@
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/villa-cristobal-19/",
     "id": "",
     "name": "Villa Crist\u00f3bal 19",
-    "price": "$35.000",
+    "price": "$28.000",
     "special_prices": {
       "$18.000": [
         "2022-10-01",
@@ -1048,7 +1052,7 @@
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/villa-cristobal-9/",
     "id": "",
     "name": "Villa Crist\u00f3bal 9",
-    "price": "$25.000",
+    "price": "$18.000",
     "special_prices": {
       "$18.000": [
         "2022-10-01",
