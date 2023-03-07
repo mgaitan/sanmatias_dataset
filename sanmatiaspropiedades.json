@@ -93,9 +93,9 @@
       ]
     },
     "occupation": [
-      "2023-03-04",
-      "2023-03-05",
-      "2023-03-06"
+      "2023-03-24",
+      "2023-03-25",
+      "2023-03-26"
     ]
   },
   {
@@ -174,9 +174,6 @@
       "2022-12-17",
       "2022-12-18",
       "2022-12-19",
-      "2023-03-03",
-      "2023-03-04",
-      "2023-03-05",
       "2023-03-06",
       "2023-03-07",
       "2023-03-08",
@@ -340,17 +337,7 @@
         "2022-11-30"
       ]
     },
-    "occupation": [
-      "2023-02-25",
-      "2023-02-26",
-      "2023-02-27",
-      "2023-02-28",
-      "2023-03-01",
-      "2023-03-02",
-      "2023-03-03",
-      "2023-03-04",
-      "2023-03-05"
-    ]
+    "occupation": []
   },
   {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1376-arenas-del-golfo-18/",
@@ -415,7 +402,11 @@
         "2022-11-30"
       ]
     },
-    "occupation": []
+    "occupation": [
+      "2023-03-09",
+      "2023-03-10",
+      "2023-03-11"
+    ]
   },
   {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1427-la-calma-2/",
@@ -461,7 +452,11 @@
         "2022-11-30"
       ]
     },
-    "occupation": []
+    "occupation": [
+      "2023-03-10",
+      "2023-03-11",
+      "2023-03-12"
+    ]
   },
   {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/cabana-lautaro/",
