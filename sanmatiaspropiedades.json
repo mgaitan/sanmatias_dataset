@@ -271,11 +271,7 @@
         "2022-11-30"
       ]
     },
-    "occupation": [
-      "2023-03-07",
-      "2023-03-08",
-      "2023-03-09"
-    ]
+    "occupation": []
   },
   {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1262-torre-franca-91/",
@@ -321,19 +317,6 @@
       "2023-03-13",
       "2023-03-14"
     ]
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1356-casa-ximena/",
-    "id": "1356",
-    "name": "Casa Ximena",
-    "price": "$40.000",
-    "special_prices": {
-      "$28.000": [
-        "2022-10-01",
-        "2022-11-30"
-      ]
-    },
-    "occupation": []
   },
   {
     "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1376-arenas-del-golfo-18/",
@@ -473,14 +456,6 @@
         "2022-12-11"
       ]
     },
-    "occupation": []
-  },
-  {
-    "url": "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/duplex-georgy/",
-    "id": "1430",
-    "name": "Duplex Georgy 5\u00ba Bajada",
-    "price": "$28.000",
-    "special_prices": {},
     "occupation": []
   },
   {
