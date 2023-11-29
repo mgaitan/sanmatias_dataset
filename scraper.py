@@ -4,8 +4,13 @@ from datetime import date, datetime
 
 import requests
 from pyquery import PyQuery
+from pathlib import Path
 
+from icalendar import Calendar, Event
+import pytz
 # from rich import print
+
+tz = pytz.timezone("America/Buenos_Aires")
 
 
 def parse_occupations(items):
@@ -117,12 +122,26 @@ def get_apartments_urls():
     )
 
 
-if __name__ == "__main__":
+def write_ical(depto):
+    cal = Calendar()
+    for date_ in depto['occupation']:
+        event = Event()
+        event.add('summary', depto['name'])
+        event.add('dtstart', tz.localize(date_))
+        event.add('dtend', tz.localize(date_))
+        event.add('dtstamp', tz.localize(datetime.now()))
+        cal.add_component(event)
+    Path(f"{depto['name'].replace(' ', '_')}.ics").write_bytes(cal.to_ical())    
 
-    items = [scrap_item(url) for url in get_apartments_urls()]
+
+if __name__ == "__main__":
+    deptos = [scrap_item(url) for url in get_apartments_urls() if "la-calma-" in url]
     json.dump(
-        items,
-        open("sanmatiaspropiedades.json", "w"),
+        deptos,
+        open("deptos.json", "w"),
         indent=2,
         default=lambda a: str(a).partition(" ")[0],
     )
+
+    for depto in deptos:
+        write_ical(depto)
