@@ -8,6 +8,7 @@ from pathlib import Path
 
 from icalendar import Calendar, Event
 import pytz
+
 # from rich import print
 
 tz = pytz.timezone("America/Buenos_Aires")
@@ -42,10 +43,12 @@ def scrap_item(url):
     pq = PyQuery(response.content)
 
     try:
-        item["id"], _, item["name"] = re.split(r"(\-| ?– ?)", pq("h1.header_title").text())
+        item["id"], _, item["name"] = re.split(
+            r"(\-| ?– ?)", pq("h1.header_title").text()
+        )
     except ValueError:
         item["id"], _, item["name"] = "", "", pq("h1.header_title").text()
-    
+
     prices = json.loads(pq("div.ovabrw__product_calendar").attr("price_calendar"))
 
     item["price"] = PyQuery(prices[1]["ovabrw_daily_monday"]).text()
@@ -56,7 +59,8 @@ def scrap_item(url):
     if special_prices:
         item["special_prices"] = {
             PyQuery(k).text(): tuple(
-                date.fromtimestamp(int(timestamp)).strftime("%Y-%m-%d") for timestamp in v
+                date.fromtimestamp(int(timestamp)).strftime("%Y-%m-%d")
+                for timestamp in v
             )
             for (k, v) in special_prices.items()
         }
@@ -75,7 +79,6 @@ def scrap_item(url):
 
 
 def get_apartments_urls():
-
     headers = {
         "authority": "www.sanmatiaspropiedades.com.ar",
         "accept": "*/*",
@@ -124,18 +127,24 @@ def get_apartments_urls():
 
 def write_ical(depto):
     cal = Calendar()
-    for date_ in depto['occupation']:
+    for date_ in depto["occupation"]:
         event = Event()
-        event.add('summary', depto['name'])
-        event.add('dtstart', tz.localize(date_))
-        event.add('dtend', tz.localize(date_))
-        event.add('dtstamp', tz.localize(datetime.now()))
+        event.add("summary", depto["name"])
+        event.add("dtstart", tz.localize(date_))
+        event.add("dtend", tz.localize(date_))
+        event.add("dtstamp", tz.localize(datetime.now()))
         cal.add_component(event)
-    Path(f"{depto['name'].replace(' ', '_')}.ics").write_bytes(cal.to_ical())    
+    Path(f"{depto['name'].replace(' ', '_')}.ics").write_bytes(cal.to_ical())
 
 
 if __name__ == "__main__":
-    deptos = [scrap_item(url) for url in get_apartments_urls() if "la-calma-" in url]
+    urls = [
+        "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1426-la-calma-1/",
+        "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1427-la-calma-2/",
+        "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1428-la-calma-3/",
+        "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1429-la-calma-4/",
+    ]  # get_apartments_urls()
+    deptos = [scrap_item(url) for url in urls if "la-calma-" in url]
     json.dump(
         deptos,
         open("deptos.json", "w"),
