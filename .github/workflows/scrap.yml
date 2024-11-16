@@ -11,14 +11,10 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out this repo
-      uses: actions/checkout@v2
-    - name: Install requirements
-      run: |-
-        pip install -r requirements.txt
+    - uses: actions/checkout@v2
+    - uses: astral-sh/setup-uv@v3
     - name: Fetch latest data
-      run: |-
-        python scraper.py
+      run: uv run --with-requirements requirements.txt scraper.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"

@@ -145,12 +145,12 @@ if __name__ == "__main__":
         "https://www.sanmatiaspropiedades.com.ar/propiedades/alquiler-temporario/1429-la-calma-4/",
     ]  # get_apartments_urls()
     deptos = [scrap_item(url) for url in urls if "la-calma-" in url]
-    json.dump(
+    json_data = json.dumps(
         deptos,
-        open("deptos.json", "w"),
         indent=2,
         default=lambda a: str(a).partition(" ")[0],
     )
+    Path("deptos.json").write_text(json_data)
 
     for depto in deptos:
         write_ical(depto)
